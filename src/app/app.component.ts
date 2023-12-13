@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ang1';
+  curso = '2º DAW 2023'
 }
