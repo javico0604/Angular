@@ -1,1 +1,5 @@
-<p>clientes works!</p>
+<h2>Hola {{miCliente.name}} eres de {{miCliente.city}}</h2>
+<h3>El segundo nombre es: {{nombres[1]}}</h3>
+<h3>El segundo ciudad es: {{ciudades[1]}}</h3>
+<h3>El segundo cliente es: {{clientes[1].name}}</h3>
+<span *ngFor="let nombre of nombres">{{nombre}} </span>
