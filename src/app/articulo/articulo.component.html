@@ -10,4 +10,6 @@
       <b><p class="card-text text-center">{{articulo.precio}}</p></b>
     </div>
     <button id="{{articulo.id}}" class="btn btn-primary" [disabled]="botonActivo">comprar</button>
-  </div>
+</div>
+<button class="btn btn-primary" (click)="activar()">Activar</button>
+<button class="btn btn-danger" (click)="desactivar()">Desactivar</button>

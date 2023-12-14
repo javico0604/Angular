@@ -23,6 +23,14 @@ ngOnInit(){
                     this.botonActivo=false},5000);
 }
 
+activar(){
+  this.botonActivo = false
+}
+
+desactivar(){
+  this.botonActivo = true
+}
+
 }
 
 
