@@ -1,0 +1,19 @@
+<h3 class="text-center">Articulo seleccionado </h3>
+<table>
+  <tr>
+    <td>id:</td>
+    <td><input type="text" [(ngModel)]="cliente.id" readonly> </td>
+  </tr>
+  <tr>
+    <td>nombre:</td>
+    <td><input type="text" [(ngModel)]="cliente.nombre"> </td>
+  </tr>
+  <tr>
+    <td>cargo:</td>
+    <td><input type="text" [(ngModel)]="cliente.cargo"> </td>
+  </tr>
+</table>
+<div class="text-center">
+  <button (click)="updateCliente()" class="btn btn-primary">Modificar articulo</button>&nbsp;
+  <button routerLink="/clientes" class="btn btn-success">Cancelar</button>
+</div>

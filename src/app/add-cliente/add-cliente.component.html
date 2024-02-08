@@ -1,0 +1,17 @@
+<table>
+    <tr>
+      <td>nombre:</td>
+      <td><input type="text" [(ngModel)]="cliente.nombre"> </td>
+    </tr>
+    <tr>
+      <td>descripcion:</td>
+      <td><input type="text" [(ngModel)]="cliente.cargo"> </td>
+    </tr>
+    <tr>
+
+    </tr>
+  </table>
+
+  <button (click)="addCliente()" class="btn btn-primary">Añadir</button>
+  <button routerLink="/clientes" class="btn btn-primary">Volver</button>
+

@@ -1,0 +1,19 @@
+<div>{{mensaje}}</div>
+<table class="table">
+<thead>
+    <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Cargo</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <th scope="row">{{cliente.id}}</th>
+        <td>{{cliente.nombre}}</td>
+        <td>{{cliente.cargo}}</td>
+        <td><button routerLink="/updateClientes/{{cliente.id}}" class="btn btn-primary">Actualizar</button></td>
+        <td><button (click)="borrar(cliente.id)" class="btn btn-danger">Borrar</button></td>
+    </tr>
+</tbody>
+<button routerLink="/clientes" class="btn btn-primary">Volver</button>
