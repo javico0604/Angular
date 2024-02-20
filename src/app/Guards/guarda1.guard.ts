@@ -10,19 +10,19 @@ export class Guarda1Guard implements CanActivate {
 
   constructor(private router:Router, private servicio:ArticulosService){}
 
+  password!:string | null
+
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    
-    let nombre = 'Paco'
-    let password = 'Paco123'
-    
-    if(this.servicio.acceder(nombre, password)){
-      return true;
-    }else{
-      this.router.navigate(["/"])
-      return false;
+      
+   while(this.password != "hola"){
+    this.password = prompt("contraseña")
+    if(this.password == null){
+      break
     }
+   }
+
+   return this.password === "hola"
   }
-  
 }

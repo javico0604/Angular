@@ -6,14 +6,12 @@
     <tr>
         <th scope="col">Id</th>
         <th scope="col">Nombre</th>
-        <th scope="col">Cargo</th>
     </tr>
 </thead>
 <tbody>
     <tr *ngFor="let cliente of clientes">
         <th scope="row">{{cliente.id}}</th>
         <td>{{cliente.nombre}}</td>
-        <td>{{cliente.cargo}}</td>
         <td><button routerLink="/clientes/{{cliente.id}}" class="btn btn-primary">Ver</button></td>
     </tr>
 </tbody>
